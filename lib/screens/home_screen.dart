@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
                 builder: (context) {
                   return AlertDialog(
                     title: Text("Peringatan"),
-                    content: Text("Ingin Menghapus ${contact.name}?"),
+                    content: Text("Ingin Menghapus Kontak${contact.name}?"),
                     actions: [
                       FlatButton(
                         onPressed: () async {
