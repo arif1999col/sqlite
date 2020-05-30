@@ -110,18 +110,14 @@ class _HomeState extends State<Home> {
                   context, MaterialPageRoute(builder: (context) => Aboutme()));
             },
           ),
-             Container(
-                    child:
-                   Image.network('https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/113d1046-6bdc-4475-a781-99f6cf7d1acd/001-understand-yourself-large-opt.png',
-                      fit: BoxFit.fitWidth,
-                    ),
-                  ),
+             
         ], 
           
       ),
 
 
-      body: FutureBuilder<List<Kontak>>(
+      body: 
+      FutureBuilder<List<Kontak>>(
         future: future,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
@@ -144,7 +140,7 @@ class _HomeState extends State<Home> {
             }
           }
         },
-      ),
+       ),
     );
   }
 }
